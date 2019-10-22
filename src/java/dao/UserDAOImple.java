@@ -94,7 +94,6 @@ public class UserDAOImple implements UserDAO {
             } catch (SQLException e) {
                     e.printStackTrace();
             }
-
     }
 
     @Override

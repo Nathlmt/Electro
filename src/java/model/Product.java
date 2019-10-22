@@ -9,11 +9,11 @@ public class Product {
     private String hinh_anh_3;
     private String hinh_anh_4;
     private String hinh_anh_5;
-    private float gia_ban;
+    private int gia_ban;
     
     public Product() {}
     
-    public Product(int ma_san_pham, int ma_loai_san_pham, String ten_san_pham, String hinh_anh_1, String hinh_anh_2, String hinh_anh_3, String hinh_anh_4, String hinh_anh_5, float gia_ban) {
+    public Product(int ma_san_pham, int ma_loai_san_pham, String ten_san_pham, String hinh_anh_1, String hinh_anh_2, String hinh_anh_3, String hinh_anh_4, String hinh_anh_5, int gia_ban) {
         this.ma_san_pham = ma_san_pham;
         this.ma_loai_san_pham = ma_loai_san_pham;
         this.ten_san_pham = ten_san_pham;
@@ -61,7 +61,7 @@ public class Product {
         return ten_san_pham;
     }
 
-    public void setGia_ban(float gia_ban) {
+    public void setGia_ban(int gia_ban) {
         this.gia_ban = gia_ban;
     }
 

@@ -28,9 +28,9 @@ public class SignupServlet extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		java.sql.Date date= null;		
+		java.sql.Date ngaysinh= null;		
 		try {
-			date = new java.sql.Date((new SimpleDateFormat("yyyy-MM-dd").parse(request.getParameter("date"))).getTime());
+			ngaysinh = new java.sql.Date((new SimpleDateFormat("yyyy-MM-dd").parse(request.getParameter("date"))).getTime());
 		} catch (ParseException e1) {
 			e1.printStackTrace();
 		}
@@ -57,7 +57,7 @@ public class SignupServlet extends HttpServlet {
 		try {
                     if (error.length() == 0) {
                         HttpSession session = request.getSession();
-                        userDAO.addUser(new User(0, username, password, date, gioitinh, email, sdt, diachi, "2"));
+                        userDAO.addUser(new User(0, username, password, ngaysinh, gioitinh, email, sdt, diachi, "2"));
                         userDAO.loginUser(username, password);
                         Cookie loginCookie = new Cookie("username",username);
                         //setting cookie to expiry in 30 mins

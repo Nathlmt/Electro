@@ -110,7 +110,6 @@
                             <li><a href="#">LAPTOP</a></li>
                             <li><a href="#">CAMERA</a></li>
                             <li><a href="#">TABLET</a></li>
-                            <li><a href="#">OTHERS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -195,7 +194,6 @@
                             <li><a href="#">LAPTOP</a></li>
                             <li><a href="#">CAMERA</a></li>
                             <li><a href="#">TABLET</a></li>
-                            <li><a href="#">OTHERS</a></li>
                         </ul>
                     </div>
                 </div>
